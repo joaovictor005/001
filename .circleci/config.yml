@@ -1,0 +1,116 @@
+
+public class Exercicios {
+	double altura1;
+	double area1;
+	double base1;
+	
+		double calcarea() {
+			
+			return (area1 = base1 * altura1);
+		}	
+}
+
+public class principa {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Exercicios quadrado1 = new Exercicios();
+		
+		quadrado1.altura1 = 70;
+			System.out.println("altura do primeiro quadrado "+quadrado1.altura1);
+		
+		quadrado1.base1= 70;
+			System.out.println("base do primeiro quadrado "+quadrado1.base1);
+		
+			System.out.println(quadrado1.calcarea());
+			
+			
+			
+		Exercicios quadrado2 = new Exercicios();
+		
+		quadrado2.altura1 = 50;
+			System.out.println("altura do segundo quadrado "+quadrado2.altura1);
+		
+		quadrado2.base1 = 50;
+			System.out.println("base do segundo quadrado "+quadrado2.base1);
+			
+			System.out.println(quadrado2.calcarea());
+			
+
+	}
+
+}
+
+
+
+
+
+public class Exercicio {
+	double salarioliquido;
+	double aumentosalario;
+	double salariototal;
+	double imposto;
+	double salariobruto;
+	
+		double caulario() {
+			
+			return (salariototal = salarioliquido + aumentosalario);
+		}
+		double salaurio() {
+			
+			return (salarioliquido = salariobruto - imposto);
+		}
+}
+
+
+public class principal {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		Exercicio pedro = new Exercicio();
+		
+		pedro.imposto = 500;
+		System.out.println("o imposto de Pedro é: " + pedro.imposto);
+		
+		pedro.salariobruto = 1000;
+		System.out.println("o salario bruto do Pedro sera de: " + pedro.aumentosalario);
+		
+		
+		System.out.println("Salario liquido de Pedro é: " + pedro.salaurio());
+		
+		pedro.salarioliquido = pedro.salaurio;
+		System.out.println("Salario liquido de pedro é: " + pedro.salaurio());
+			
+		pedro.aumentosalario = 500;
+		System.out.println("O aumento de Salario sera de " + pedro.aumentosalario);
+
+		System.out.println(pedro.caulario());
+		
+		Exercicio wagner = new Exercicio();
+		
+		wagner.salarioliquido = 5000;
+		System.out.println("Salario liquido de Wagner é: " + wagner.salarioliquido);
+		
+		wagner.aumentosalario = 600;
+		System.out.println("O aumento de salario do Wagner sera de: " + wagner.aumentosalario);
+		
+		System.out.println(wagner.salaurio());
+		
+		wagner.salarioliquido = wagner.salaurio;
+		System.out.println("Salario liquido de wagner é: " + wagner.salaurio());
+			
+		wagner.aumentosalario = 500;
+		System.out.println("O aumento de Salario sera de " + wagner.aumentosalario);
+
+		System.out.println(wagner.caulario());
+		
+	}
+
+}
